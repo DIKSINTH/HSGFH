@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url(../images/log-in.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  font-size: 14px;
+  color: #bbb;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: #111;
+  padding: 0 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #2575fc;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 10px;
+  color: #2575fc;
+}
+
+.input-group .error-message {
+  color: #ff6347;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #6a11cb;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #2575fc;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 25px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">HSGH</div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links menu">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Guidances</a>
+            <div class="dropdown">
+              <a href="#">Web Development</a>
+              <a href="#">App Development</a>
+              <a href="#">UI/UX Design</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Calculators</a>
+            <div class="dropdown">
+              <a href="#">Web Development</a>
+              <a href="#">App Development</a>
+              <a href="#">UI/UX Design</a>
+            </div>
+          </li>
+          <li><a href="#">Quotes</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="#">Home</a>
+          <a href="#">Guidances</a>
+          <a href="#">Calculators</a>
+          <a href="#">Quotes</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Health is a real wealth</h1>
+      <p>Your journey towards health life starts here.</p>
+      <button class="cta-button">Begin Your Journey</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <h2>Welcome to My Universe</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/water.jpg" alt="" />
+          </h2>
+          <p>
+            Drinking water can actually help improve your mood and mental
+            clarity!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/exercise.jpg" alt="" />
+          </h2>
+          <p>Exercise can literally make your brain bigger!</p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/vegetables.jpg" alt="" />
+          </h2>
+          <p>Vegetables can “talk” to each other through their roots!</p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/sunlight.jpg" alt="" />
+          </h2>
+          <p>
+            Sunlight is made up of different colors, but we can’t always see
+            them!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/laughter.jpg" alt="" />
+          </h2>
+          <p>Laughter is contagious—and it's good for your health!</p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/sleep.jpg" alt="" />
+          </h2>
+          <p>
+            Your brain is more active while you're asleep than when you're
+            awake!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/diet.jpg" alt="" />
+          </h2>
+          <p>
+            Your body burns more calories digesting protein than it does
+            digesting fats or carbohydrates!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img
+              class="desc-img"
+              src="assets/images/self-confidence.jpg"
+              alt=""
+            />
+          </h2>
+          <p>Self-confidence can be built through "power poses"!</p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/cigarette.jpg" alt="" />
+          </h2>
+          <p>
+            Cigarettes contain over 7,000 chemicals, and at least 70 of them are
+            known to cause cancer!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/stress.jpg" alt="" />
+          </h2>
+          <p>Stress can actually boost your memory—temporarily!</p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/alcohol.jpg" alt="" />
+          </h2>
+          <p>
+            Alcohol can make you warmer, but it actually lowers your body
+            temperature!
+          </p>
+        </div>
+        <div class="service-card">
+          <h2>
+            <img class="desc-img" src="assets/images/cancer.jpg" alt="" />
+          </h2>
+          <p>Cancer isn’t just one disease—it's over 100 different diseases!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Diksinth S. All rights reserved.</p>
+    </footer>
+    <script>
+      // JavaScript for toggling mobile menu
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+        // Animate hamburger to cross on click
+        const bars = hamburger.querySelectorAll("div");
+        bars[0].classList.toggle("rotate-45");
+        bars[1].classList.toggle("opacity-0");
+        bars[2].classList.toggle("rotate-135");
+      });
+    </script>
+  </body>
+</html>
