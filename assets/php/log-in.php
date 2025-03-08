@@ -3,22 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="assets/css/sign-in.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/log-in.css">
 </head>
 <body>
-  <div class="signup-container">
-    <h2><img src="assets/images/logo.png" alt="" style="width:220px;
+  <div class="login-container" >
+     <h2><img src="../images/logo.png" alt="" style="width:220px;
     height:100px;"></h2>
-
-    <form id="signup-form" action="assets/php/sign-in_db.php" method="POST">
-      <!-- Full Name Input -->
-      <div class="input-group">
-        <input type="text" id="full-name" name="full-name" placeholder=" " required>
-        <label for="full-name">Full Name</label>
-        <div class="error-message" id="name-error"></div>
-      </div>
-
+    <form id="login-form" action="log-in_db.php" method="POST">
       <!-- Email Input -->
       <div class="input-group">
         <input type="email" id="email" name="email" placeholder=" " required>
@@ -33,14 +25,12 @@
         <div class="error-message" id="password-error"></div>
       </div>
 
-
       <!-- Submit Button -->
-      <button type="submit" class="submit-btn">Sign Up</button>
-    </form>
+      <button type="submit" class="submit-btn">Log In</button>
 
-    <div class="signup-footer">
-      <p>Already have an account? <a href="assets/php/log-in.php">Log in</a></p>
-    </div>
+    </form>
+    
   </div>
+
 </body>
 </html>

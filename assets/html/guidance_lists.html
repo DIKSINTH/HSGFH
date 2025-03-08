@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/guidance_lists.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt=""
+            style="width: 110px; height: 50px"
+          />
+          <h6 style="padding-left: 28px">HSGH</h6>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links menu">
+          <li><a href="Home.html">Home</a></li>
+          <li>
+            <a href="#">Guidances</a>
+          </li>
+          <li>
+            <a href="#">Calculators</a>
+          </li>
+          <li><a href="quotes.html">Quotes</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="#">Home</a>
+          <a href="#">Guidances</a>
+          <a href="#">Calculators</a>
+          <a href="#">Quotes</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="section-content">
+        <h1>Vision Health</h1>
+        <p>
+          Eyes are the windows to the world, allowing us to see, perceive, and
+          connect with life in all its beauty.
+        </p>
+        <button>let's save your vision</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/brain-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Brain Health</h1>
+        <p>
+          The brain is the control center of life, guiding our thoughts,
+          actions, and emotions—without it, nothing functions.
+        </p>
+        <button>let's sharp your brain</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/heart-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Heart Health</h1>
+        <p>
+          The heart is the engine of life, tirelessly pumping blood to keep
+          every part of the body alive and functioning.
+        </p>
+        <button>let's save your heart</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/skin-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Skin Health</h1>
+        <p>
+          Skin is the body's protective shield, guarding us against harm while
+          reflecting our health and well-being.
+        </p>
+        <button>let's shine your skin</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/hair-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Hair Health</h1>
+        <p>
+          Hair is more than just beauty; it protects the scalp, regulates
+          temperature, and reflects overall health.
+        </p>
+        <button>let's maintain your hair</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/mental-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Mental Health</h1>
+        <p>
+          Mental health is the foundation of a fulfilling life, shaping our
+          thoughts, emotions, and overall well-being.
+        </p>
+        <button>let's focus your mental</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/oral-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Oral Health</h1>
+        <p>
+          Oral health is the gateway to overall health, affecting digestion,
+          confidence, and even heart health.
+        </p>
+        <button>let's Strengthen your dental</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/immune-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Immune Health</h1>
+        <p>
+          Immune health is the body's defense system, protecting us from
+          illnesses and keeping us strong and resilient.
+        </p>
+        <button>let's improve your Immune</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/muscle-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Muscle Health</h1>
+        <p>
+          Muscle health is essential for strength, movement, and overall
+          vitality, supporting an active and independent life
+        </p>
+        <button>let's build your Muscles</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/blood-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Blood Health</h1>
+        <p>
+          Blood is the lifeline of the body, delivering oxygen, nutrients, and
+          protection to every organ and cell
+        </p>
+        <button>let's flow your blood.</button>
+      </div>
+    </section>
+    <section
+      class="section"
+      style="background-image: url(../images/emotional-health.jpg)"
+    >
+      <div class="section-content">
+        <h1>Emotional Health</h1>
+        <p>
+          Emotional health is the key to inner peace, helping us build strong
+          relationships and navigate life's challenges with resilience."
+        </p>
+        <button>let's clear your thoughts</button>
+      </div>
+    </section>
+    <footer
+      style="
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      "
+    >
+      <p style="font-size: 16px">
+        &copy; 2025 Diksinth S. All rights reserved.
+      </p>
+    </footer>
+    <script>
+      // JavaScript for toggling mobile menu
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+        // Animate hamburger to cross on click
+        const bars = hamburger.querySelectorAll("div");
+        bars[0].classList.toggle("rotate-45");
+        bars[1].classList.toggle("opacity-0");
+        bars[2].classList.toggle("rotate-135");
+      });
+    </script>
+  </body>
+</html>

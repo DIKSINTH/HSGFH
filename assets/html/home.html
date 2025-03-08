@@ -4,37 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navigation Bar</title>
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav>
       <div class="navbar">
-        <div class="logo">HSGH</div>
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt=""
+            style="width: 110px; height: 50px"
+          />
+          <h6 style="padding-left: 28px">HSGH</h6>
+        </div>
         <div class="hamburger" id="hamburger">
           <div></div>
           <div></div>
           <div></div>
         </div>
         <ul class="nav-links menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="Home.html">Home</a></li>
           <li>
             <a href="#">Guidances</a>
-            <div class="dropdown">
-              <a href="#">Web Development</a>
-              <a href="#">App Development</a>
-              <a href="#">UI/UX Design</a>
-            </div>
           </li>
           <li>
             <a href="#">Calculators</a>
-            <div class="dropdown">
-              <a href="#">Web Development</a>
-              <a href="#">App Development</a>
-              <a href="#">UI/UX Design</a>
-            </div>
           </li>
-          <li><a href="#">Quotes</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
         </ul>
         <div class="mobile-menu" id="mobile-menu">
           <a href="#">Home</a>
@@ -48,16 +45,21 @@
     <section class="hero">
       <h1>Health is a real wealth</h1>
       <p>Your journey towards health life starts here.</p>
-      <button class="cta-button">Begin Your Journey</button>
+      <button class="cta-button" onclick="begin()">Begin Your Journey</button>
     </section>
-
+    <script>
+      function begin() {
+        // Navigate to a different webpage
+        window.location.href = "home.html#services";
+      }
+    </script>
     <!-- Services Section -->
-    <section class="services">
-      <h2>Welcome to My Universe</h2>
+    <section class="services" id="services">
+      <h2>Did you know!</h2>
       <div class="service-cards">
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/water.jpg" alt="" />
+            <img class="desc-img" src="../images/water.jpg" alt="" />
           </h2>
           <p>
             Drinking water can actually help improve your mood and mental
@@ -66,34 +68,34 @@
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/exercise.jpg" alt="" />
+            <img class="desc-img" src="../images/exercise.jpg" alt="" />
           </h2>
           <p>Exercise can literally make your brain bigger!</p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/vegetables.jpg" alt="" />
+            <img class="desc-img" src="../images/vegetables.jpg" alt="" />
           </h2>
           <p>Vegetables can “talk” to each other through their roots!</p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/sunlight.jpg" alt="" />
+            <img class="desc-img" src="../images/sunlight.jpg" alt="" />
           </h2>
           <p>
-            Sunlight is made up of different colors, but we can’t always see
+            Sunlight is made up of different colors, but we can't always see
             them!
           </p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/laughter.jpg" alt="" />
+            <img class="desc-img" src="../images/laughter.jpg" alt="" />
           </h2>
           <p>Laughter is contagious—and it's good for your health!</p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/sleep.jpg" alt="" />
+            <img class="desc-img" src="../images/sleep.jpg" alt="" />
           </h2>
           <p>
             Your brain is more active while you're asleep than when you're
@@ -102,7 +104,7 @@
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/diet.jpg" alt="" />
+            <img class="desc-img" src="../images/diet.jpg" alt="" />
           </h2>
           <p>
             Your body burns more calories digesting protein than it does
@@ -111,17 +113,13 @@
         </div>
         <div class="service-card">
           <h2>
-            <img
-              class="desc-img"
-              src="assets/images/self-confidence.jpg"
-              alt=""
-            />
+            <img class="desc-img" src="../images/self-confidence.jpg" alt="" />
           </h2>
           <p>Self-confidence can be built through "power poses"!</p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/cigarette.jpg" alt="" />
+            <img class="desc-img" src="../images/cigarette.jpg" alt="" />
           </h2>
           <p>
             Cigarettes contain over 7,000 chemicals, and at least 70 of them are
@@ -130,13 +128,13 @@
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/stress.jpg" alt="" />
+            <img class="desc-img" src="../images/stress.jpg" alt="" />
           </h2>
           <p>Stress can actually boost your memory—temporarily!</p>
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/alcohol.jpg" alt="" />
+            <img class="desc-img" src="../images/alcohol.jpg" alt="" />
           </h2>
           <p>
             Alcohol can make you warmer, but it actually lowers your body
@@ -145,9 +143,9 @@
         </div>
         <div class="service-card">
           <h2>
-            <img class="desc-img" src="assets/images/cancer.jpg" alt="" />
+            <img class="desc-img" src="../images/cancer.jpg" alt="" />
           </h2>
-          <p>Cancer isn’t just one disease—it's over 100 different diseases!</p>
+          <p>Cancer isn't just one disease—it's over 100 different diseases!</p>
         </div>
       </div>
     </section>
